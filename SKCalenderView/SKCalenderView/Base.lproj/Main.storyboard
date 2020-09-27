@@ -22,11 +22,21 @@
                                     <constraint firstAttribute="height" constant="100" id="PeP-Hs-3A7"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSD-WV-txb" customClass="CalenderCollectionView" customModule="SKCalenderView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="215" width="414" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="YO1-eW-BEh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="YSD-WV-txb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1wi-6E-93L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cyz-TP-MZ6" secondAttribute="trailing" id="M5I-9o-g95"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YSD-WV-txb" secondAttribute="trailing" id="QHf-v0-cmF"/>
                             <constraint firstItem="cyz-TP-MZ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="hQY-u0-lTz"/>
+                            <constraint firstItem="YSD-WV-txb" firstAttribute="top" secondItem="cyz-TP-MZ6" secondAttribute="bottom" constant="49" id="nA3-Sd-5os"/>
                             <constraint firstItem="cyz-TP-MZ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xqZ-GN-sWZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

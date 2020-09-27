@@ -17,6 +17,10 @@
 		C6CE4F8C25205B7C00B2FC7F /* SKCalenderViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE4F8B25205B7C00B2FC7F /* SKCalenderViewUITests.swift */; };
 		C6CE4F9F25205F7500B2FC7F /* CalenderBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6CE4F9E25205F7500B2FC7F /* CalenderBannerView.xib */; };
 		C6CE4FA12520607C00B2FC7F /* CalenderBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE4FA02520607C00B2FC7F /* CalenderBannerView.swift */; };
+		C6CE4FA3252063E000B2FC7F /* CalenderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6CE4FA2252063E000B2FC7F /* CalenderCollectionView.xib */; };
+		C6CE4FA52520647500B2FC7F /* CalenderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE4FA42520647500B2FC7F /* CalenderCollectionView.swift */; };
+		C6CE4FA8252067F500B2FC7F /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE4FA6252067F500B2FC7F /* DayCollectionViewCell.swift */; };
+		C6CE4FA9252067F500B2FC7F /* DayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6CE4FA7252067F500B2FC7F /* DayCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		C6CE4F8D25205B7C00B2FC7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6CE4F9E25205F7500B2FC7F /* CalenderBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderBannerView.xib; sourceTree = "<group>"; };
 		C6CE4FA02520607C00B2FC7F /* CalenderBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderBannerView.swift; sourceTree = "<group>"; };
+		C6CE4FA2252063E000B2FC7F /* CalenderCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderCollectionView.xib; sourceTree = "<group>"; };
+		C6CE4FA42520647500B2FC7F /* CalenderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCollectionView.swift; sourceTree = "<group>"; };
+		C6CE4FA6252067F500B2FC7F /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		C6CE4FA7252067F500B2FC7F /* DayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,10 @@
 			children = (
 				C6CE4F9E25205F7500B2FC7F /* CalenderBannerView.xib */,
 				C6CE4FA02520607C00B2FC7F /* CalenderBannerView.swift */,
+				C6CE4FA2252063E000B2FC7F /* CalenderCollectionView.xib */,
+				C6CE4FA42520647500B2FC7F /* CalenderCollectionView.swift */,
+				C6CE4FA6252067F500B2FC7F /* DayCollectionViewCell.swift */,
+				C6CE4FA7252067F500B2FC7F /* DayCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +292,8 @@
 			files = (
 				C6CE4F7625205B7C00B2FC7F /* LaunchScreen.storyboard in Resources */,
 				C6CE4F7325205B7C00B2FC7F /* Assets.xcassets in Resources */,
+				C6CE4FA3252063E000B2FC7F /* CalenderCollectionView.xib in Resources */,
+				C6CE4FA9252067F500B2FC7F /* DayCollectionViewCell.xib in Resources */,
 				C6CE4F9F25205F7500B2FC7F /* CalenderBannerView.xib in Resources */,
 				C6CE4F7125205B7B00B2FC7F /* Main.storyboard in Resources */,
 			);
@@ -306,6 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6CE4FA52520647500B2FC7F /* CalenderCollectionView.swift in Sources */,
+				C6CE4FA8252067F500B2FC7F /* DayCollectionViewCell.swift in Sources */,
 				C6CE4F6E25205B7B00B2FC7F /* CalenderViewController.swift in Sources */,
 				C6CE4F6A25205B7B00B2FC7F /* AppDelegate.swift in Sources */,
 				C6CE4FA12520607C00B2FC7F /* CalenderBannerView.swift in Sources */,

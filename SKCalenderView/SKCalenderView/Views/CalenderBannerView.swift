@@ -19,7 +19,7 @@ class CalenderBannerView: UIView {
     */
    
     let nibName = "CalenderBannerView"
-    //var contentView:UIView?
+    var contentView:UIView?
     
     @IBOutlet weak var label: UILabel!
     
@@ -37,7 +37,7 @@ class CalenderBannerView: UIView {
         guard let view = loadViewFromNib() else { return }
         view.frame = self.bounds
         self.addSubview(view)
-        //contentView = view
+        contentView = view
     }
     
     func loadViewFromNib() -> UIView? {

@@ -9,6 +9,8 @@
 import UIKit
 
 class CalenderViewController: UIViewController {
+    
+    @IBOutlet weak var calenderBannerView: CalenderBannerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
