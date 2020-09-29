@@ -13,7 +13,6 @@ struct CalendarViewModel {
     
     init(date: Date) {
         self.date = date
-        offset()
     }
     
     func offset() -> Int {
@@ -22,7 +21,7 @@ struct CalendarViewModel {
     }
     
     func numberofRows() -> Int {
-        return self.offset() + 30
+        return self.offset() + self.date.numberOfDays()
     }
     
     func configureCell(for index: Int) -> DayViewModel {

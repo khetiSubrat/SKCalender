@@ -24,11 +24,19 @@ struct DayViewModel {
         return self.index - self.offSet + 1
     }
     
-     var isShow: Bool {
+    var isShow: Bool {
         if self.offSet > self.index {
             return true
         }
         
+        return false
+    }
+    
+    var isTodayDate: Bool {
+        let value = Date().getDayFromDate()
+        if todayDate == value {
+            return true
+        }
         return false
     }
 }

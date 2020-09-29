@@ -16,6 +16,7 @@ class DayCollectionViewCell: UICollectionViewCell {
         didSet {
             self.dayLabel.text = String(day!.todayDate)
             self.dayLabel.isHidden = day!.isShow
+            self.contentView.backgroundColor = day!.isTodayDate ? .green : .clear
         }
     }
     
