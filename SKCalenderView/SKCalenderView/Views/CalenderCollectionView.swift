@@ -48,12 +48,19 @@ class CalenderCollectionView: UIView {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
+        self.calendarViewModel.refreshCalendar = { [weak self] ()->() in
+            self?.collectionView.reloadData()
+        }
     }
     
     func loadViewFromNib() -> UIView? {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: nibName, bundle: bundle)
         return nib.instantiate(withOwner: self, options: nil).first as? UIView
+    }
+    
+    func updateCalender(date: Date) {
+        self.calendarViewModel.date = date
     }
 
 }
@@ -74,5 +81,18 @@ extension CalenderCollectionView: UICollectionViewDataSource,UICollectionViewDel
         cell.day = self.calendarViewModel.configureCell(for: indexPath.row)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        var reusbaleView: UICollectionReusableView?
+        
+        if kind == UICollectionView.elementKindSectionHeader {
+            let bundle = Bundle(for: type(of: self))
+            let nib = UINib(nibName: "CalendarCollectionHeaderView", bundle: bundle)
+            reusbaleView = nib.instantiate(withOwner: self, options: nil).first as? UICollectionReusableView
+        }
+        
+        return reusbaleView!
     }
 }

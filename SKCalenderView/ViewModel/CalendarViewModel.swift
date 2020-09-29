@@ -9,7 +9,15 @@
 import Foundation
 
 struct CalendarViewModel {
-    private var date: Date!
+    var date: Date! {
+        didSet {
+            if let refreshCalendar = self.refreshCalendar {
+                refreshCalendar()
+            }
+        }
+    }
+    
+    var refreshCalendar: (() -> ())?
     
     init(date: Date) {
         self.date = date
@@ -25,7 +33,9 @@ struct CalendarViewModel {
     }
     
     func configureCell(for index: Int) -> DayViewModel {
-        let dayViewModel = DayViewModel(index: index, offSet: self.offset())
+        let dayViewModel = DayViewModel(index: index,
+                                        offSet: self.offset(),
+                                        currentDate: self.date)
         return dayViewModel
     }
 }

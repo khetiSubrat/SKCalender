@@ -16,7 +16,14 @@ class CalenderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.calenderBannerView.delegate = self
     }
 
+}
+
+extension CalenderViewController: CalendarDelegate {
+    func calendarUpdateAction(date: Date) {
+        self.collectionView.updateCalender(date: date)
+    }
 }
 

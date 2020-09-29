@@ -41,6 +41,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="calenderBannerView" destination="cyz-TP-MZ6" id="8Dc-yb-cgR"/>
+                        <outlet property="collectionView" destination="YSD-WV-txb" id="Ycv-qI-NtG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
