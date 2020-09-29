@@ -26,6 +26,9 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="dayLabel" destination="tuz-41-rsj" id="zjt-AX-yGh"/>
+            </connections>
             <point key="canvasLocation" x="139" y="151"/>
         </collectionViewCell>
     </objects>

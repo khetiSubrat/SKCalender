@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C62B34EC252345F8004FB33F /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B34EB252345F8004FB33F /* CalendarViewModel.swift */; };
+		C62B34F025234702004FB33F /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B34EE25234702004FB33F /* Calender.swift */; };
+		C62B34F125234702004FB33F /* String+ConvertToDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B34EF25234702004FB33F /* String+ConvertToDate.swift */; };
+		C62B34F325234AAE004FB33F /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B34F225234AAE004FB33F /* DayViewModel.swift */; };
 		C6CE4F6A25205B7B00B2FC7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE4F6925205B7B00B2FC7F /* AppDelegate.swift */; };
 		C6CE4F6C25205B7B00B2FC7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE4F6B25205B7B00B2FC7F /* SceneDelegate.swift */; };
 		C6CE4F6E25205B7B00B2FC7F /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE4F6D25205B7B00B2FC7F /* CalenderViewController.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C62B34EB252345F8004FB33F /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		C62B34EE25234702004FB33F /* Calender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
+		C62B34EF25234702004FB33F /* String+ConvertToDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ConvertToDate.swift"; sourceTree = "<group>"; };
+		C62B34F225234AAE004FB33F /* DayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewModel.swift; sourceTree = "<group>"; };
 		C6CE4F6625205B7B00B2FC7F /* SKCalenderView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKCalenderView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CE4F6925205B7B00B2FC7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6CE4F6B25205B7B00B2FC7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,9 +96,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C62B34EA252345D7004FB33F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C62B34EB252345F8004FB33F /* CalendarViewModel.swift */,
+				C62B34F225234AAE004FB33F /* DayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C62B34ED252346EC004FB33F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C62B34EE25234702004FB33F /* Calender.swift */,
+				C62B34EF25234702004FB33F /* String+ConvertToDate.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C6CE4F5D25205B7B00B2FC7F = {
 			isa = PBXGroup;
 			children = (
+				C62B34ED252346EC004FB33F /* Extension */,
+				C62B34EA252345D7004FB33F /* ViewModel */,
 				C6CE4F6825205B7B00B2FC7F /* SKCalenderView */,
 				C6CE4F7F25205B7C00B2FC7F /* SKCalenderViewTests */,
 				C6CE4F8A25205B7C00B2FC7F /* SKCalenderViewUITests */,
@@ -323,9 +351,13 @@
 				C6CE4FA52520647500B2FC7F /* CalenderCollectionView.swift in Sources */,
 				C6CE4FA8252067F500B2FC7F /* DayCollectionViewCell.swift in Sources */,
 				C6CE4F6E25205B7B00B2FC7F /* CalenderViewController.swift in Sources */,
+				C62B34EC252345F8004FB33F /* CalendarViewModel.swift in Sources */,
+				C62B34F125234702004FB33F /* String+ConvertToDate.swift in Sources */,
 				C6CE4F6A25205B7B00B2FC7F /* AppDelegate.swift in Sources */,
 				C6CE4FA12520607C00B2FC7F /* CalenderBannerView.swift in Sources */,
+				C62B34F325234AAE004FB33F /* DayViewModel.swift in Sources */,
 				C6CE4F6C25205B7B00B2FC7F /* SceneDelegate.swift in Sources */,
+				C62B34F025234702004FB33F /* Calender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

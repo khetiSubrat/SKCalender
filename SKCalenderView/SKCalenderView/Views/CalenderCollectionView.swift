@@ -24,6 +24,8 @@ class CalenderCollectionView: UIView {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    private var calendarViewModel =  CalendarViewModel(date: Date())
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
@@ -45,6 +47,7 @@ class CalenderCollectionView: UIView {
         self.collectionView.register(nib, forCellWithReuseIdentifier: "Cell")
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+        
     }
     
     func loadViewFromNib() -> UIView? {
@@ -61,13 +64,15 @@ extension CalenderCollectionView: UICollectionViewDataSource,UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        return self.calendarViewModel.numberofRows()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! DayCollectionViewCell
         
-        cell.contentView.backgroundColor = .blue
+        cell.contentView.backgroundColor = .clear
+        cell.day = self.calendarViewModel.configureCell(for: indexPath.row)
+        
         return cell
     }
 }

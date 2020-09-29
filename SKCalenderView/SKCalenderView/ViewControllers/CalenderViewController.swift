@@ -11,12 +11,12 @@ import UIKit
 class CalenderViewController: UIViewController {
     
     @IBOutlet weak var calenderBannerView: CalenderBannerView!
+    @IBOutlet weak var collectionView: CalenderCollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
 
 }
 
