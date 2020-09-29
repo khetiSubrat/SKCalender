@@ -21,7 +21,12 @@ class CalenderBannerView: UIView {
     let nibName = "CalenderBannerView"
     var contentView:UIView?
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var monthTitle: UILabel!
+    @IBOutlet weak var yearTitle: UILabel!
+    
+    let months = [1: "January", 2: "February", 3: "March", 4: "April", 5: "May",
+                  6: "Jun", 7: "July", 8: "August", 9: "Septemeber", 10: "October", 11: "November", 12: "December"]
+    
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -38,6 +43,9 @@ class CalenderBannerView: UIView {
         view.frame = self.bounds
         self.addSubview(view)
         contentView = view
+        
+        self.monthTitle.text = months[Date().getMonthFromDate()]!
+        self.yearTitle.text = String(Date().getYearFromDate())
     }
     
     func loadViewFromNib() -> UIView? {
